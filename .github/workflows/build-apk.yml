@@ -30,14 +30,14 @@ jobs:
           gradle-version: 8.6
 
       - name: Unzip Android project
-        run: unzip -o germanai-android-auth.zip
+        run: unzip -o germanai-android-auth-fixed.zip
 
       - name: Show files
         run: ls -R
 
       - name: Build Debug APK
         working-directory: germanai-android
-        run: gradle assembleDebug --stacktrace
+        run: gradle assembleDebug --stacktrace --no-daemon
 
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
