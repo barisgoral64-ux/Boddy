@@ -30,7 +30,7 @@ jobs:
           gradle-version: 8.6
 
       - name: Unzip Android project
-        run: unzip -o germanai-android-auth-fixed.zip
+        run: unzip -o germanai-android-auth-themefixed.zip
 
       - name: Show project files
         run: |
